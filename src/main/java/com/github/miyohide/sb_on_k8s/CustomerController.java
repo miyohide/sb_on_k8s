@@ -9,7 +9,7 @@ import java.util.List;
 @Slf4j
 @RestController
 public class CustomerController {
-  private CustomerRepository customerRepository;
+  private final CustomerRepository customerRepository;
 
   public CustomerController(CustomerRepository customerRepository) {
     this.customerRepository = customerRepository;
